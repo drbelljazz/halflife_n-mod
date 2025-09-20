@@ -25,10 +25,6 @@ void NanoMod_Init()
 void RegisterCommands()
 {
 	g_engfuncs.pfnAddServerCommand("skill_menu", &ToggleSkillMenu);
-	//g_engfuncs.pfnAddServerCommand("skill_upgrade_bullet", &UpgradeBulletSkill);
-	//g_engfuncs.pfnAddServerCommand("skill_upgrade_energy", &UpgradeEnergySkill);
-	//g_engfuncs.pfnAddServerCommand("skill_upgrade_agility", &UpgradeSpeedSkill);
-	//g_engfuncs.pfnAddServerCommand("skill_upgrade_swimming", &UpgradeSwimmingSkill);
 	g_engfuncs.pfnAddServerCommand("beast", &AdrenalineRush);
 	g_engfuncs.pfnAddServerCommand("bandage", &ApplyBandage);
 	g_engfuncs.pfnAddServerCommand("showinventory", &ShowInventory);
@@ -2659,4 +2655,5 @@ void RPGStats_PlayerDefaults()  // TODO: this should be for loops, or one big ne
 	nMod.pAccuracy[BULLETWEAPON_HEAVYPISTOL][SKILL_ADVANCED][ACCURACY_EXCELLENT] = gWeaponAccuracy[BULLETWEAPON_HEAVYPISTOL][SKILL_ADVANCED][ACCURACY_EXCELLENT];
 	nMod.pAccuracy[BULLETWEAPON_HEAVYPISTOL][SKILL_ADVANCED][ACCURACY_ULTRA] = gWeaponAccuracy[BULLETWEAPON_HEAVYPISTOL][SKILL_ADVANCED][ACCURACY_ULTRA];
 }
+
 #endif
